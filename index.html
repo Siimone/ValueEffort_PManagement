@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/dragdealer.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/dragdealer.js"></script>
+    <link href="http://fonts.googleapis.com/css?
+family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
+    <style>
+        #div {
+            position: absolute;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/postit.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container">
+        <!--<div class="row">
+                <div id="just-a-slider" class="dragdealer" style="width: 100px; height: 1000px; background-color: blue">
+                        <div class="handle">drag me</div>
+                    </div>
+            <div class="col-lg-6 col-lg-offset-3">
+                <div id="just-a-slider" class="dragdealer">
+                    <div class="handle">drag me</div>
+                </div>
+                <div id="just-a-slider1" class="dragdealer">
+                    <div class="handle red-bar">drag me</div>
+                </div>
+                <div id="just-a-slider2" class="dragdealer">
+                    <div class="handle red-bar">drag me</div>
+                </div>
+                <div id="just-a-slider3" class="dragdealer">
+                    <div class="handle red-bar">drag me</div>
+                </div>
+            </div>
+        </div>-->
+        <div class="row" style="border-left: 1px solid black; border-bottom: 1px solid black">
+            <ul>
+                <div class="col-lg-2" id="card1" class="dragdealer" style="height: 1000px">
+                    <li id="card1" class="handle">
+                        <a href="#">
+                            <h2>Title #1</h2>
+                            <p>Task #1</p>
+                        </a>
+                    </li>
+                </div>
+                <div class="col-lg-2" id="card2" class="dragdealer" style="height: 1000px">
+                    <li id="card2" class="handle">
+                        <a href="#">
+                            <h2>Title #2</h2>
+                            <p>Task #2</p>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+</body>
+<script>
+    new Dragdealer('card1', {
+        horizontal: false,
+        vertical: true
+    });
+    new Dragdealer('card2', {
+        horizontal: false,
+        vertical: true
+    });
+    /*
+    new Dragdealer('just-a-slider', {
+        animationCallback: function (x, y) {
+            console.log(x)
+            $('#just-a-slider .value').text(Math.round(x * 100));
+        }
+    });*/
+</script>
+
+</html>
